@@ -1,0 +1,14 @@
+- cd into the 02-complete directory
+- $ mix phx.server
+- go to localhost:4000/graphiql
+- run the following query in the left window: 
+{
+  menuItems{
+    id
+    name
+    price
+    addedOn
+  }
+}
+- run following ExUnit test:
+$ mix test test/plate_slate_web/schema/query/menu_items_test.exs
